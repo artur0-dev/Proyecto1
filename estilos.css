@@ -11,7 +11,10 @@ body {
     background-color: #ffffff;
 }
 main {
-    margin-top: 150px;
+        margin-top: 150px; 
+        width: 100%; 
+        max-width: 100vw;
+        overflow: hidden;
 }
 header {
     position: fixed;
@@ -91,8 +94,9 @@ header {
     display: block;
     padding: 15px;
     color: black;
-    font-family: 'Open Sans';
+    font-family: "Sour Gummy", sans-serif;
     text-decoration: none;
+    font-size: 18px;
 }
 
 .menu li a:hover {
@@ -113,6 +117,7 @@ header {
     top: 100%;
     display: flex;
     flex-direction: column;
+    font-size: 18px;
 }
 
 .submenu li {
@@ -123,7 +128,7 @@ header {
     display: block;
     padding: 15px;
     color: #000000;
-    font-family: 'Open Sans';
+    font-family: "Sour Gummy", sans-serif;
     text-decoration: none;
     width: 100%;
 }
@@ -136,19 +141,60 @@ header {
 footer{
     margin-top: 1%;
     text-align: center;
-    background-color: gray;
+    background-color: rgb(0, 0, 0);
+    color: white;
     padding: 1vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Sour Gummy", sans-serif;
 }
+
+
 
 /* ---------------------------------------------------------------------------------*/
 /* --------------------------------SOLO-HOME----------------------------------------*/
 /* ---------------------------------------------------------------------------------*/
 
+.carousel {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.slides {
+    
+    display: flex;
+    width: 400vw;
+    height: 100%;
+    animation: slide 18s infinite; 
+}
+
+.slides img {
+
+    width: 100vw;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+@keyframes slide {
+    0% { transform: translateX(0%); }         
+    20% { transform: translateX(0%); }       
+    25% { transform: translateX(-100vw); }   
+    45% { transform: translateX(-100vw); }    
+    50% { transform: translateX(-200vw); }    
+    70% { transform: translateX(-200vw); }    
+    75% { transform: translateX(-300vw); }    
+    95% { transform: translateX(-300vw); }    
+    100% { transform: translateX(0%); }
+}
+
+/* ---------------------------------------------------------------------------------*/
 .contenedor {
-    max-width: 1300px;
-    width: 90%;
+    width: 60%;
     margin: auto;
+    margin-top: 120px;
+    
 }
 
 .contenedor > h1 {
@@ -158,15 +204,17 @@ footer{
     flex-direction: column;
     text-align: center;
     margin: 15px 0px;
-    margin-top: 150px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-family: "Sour Gummy", sans-serif;
 }
 
 .contenedor > h1:after {
-    content: '';
     width: 100%;
     height: 1px;
     background: #C7C7C7;
     margin: 20px 0;
+    
 }
 
 .contenedor-tienda {
@@ -181,7 +229,7 @@ footer{
 }
 
 .lista-productos .producto {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Sour Gummy", sans-serif;
     width: 22%;
     margin-left: 3%;
     margin-bottom: 5%;
@@ -227,12 +275,15 @@ footer{
     margin-bottom: 2%;
 }
 /* ---------------------------------------------------------------------------------*/
+.Configura-tu-pc {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
 .Configura-tu-pc img {
-    width: 80%;
-    margin-left: 200px;
-    max-height: 300px; 
-    margin-bottom: 30px;
+    max-height: 300px;
     border-radius: 2%;
+    margin-bottom: 30px;
 }
 
 /* ---------------------------------------------------------------------------------*/
@@ -246,7 +297,7 @@ footer{
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Sour Gummy", sans-serif;
 }
 
 .ventajas-caja {
@@ -278,7 +329,7 @@ footer{
 .ventaja p {
     font-size: 16px;
     color: #555;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Sour Gummy", sans-serif;
     margin: 0;
 }
 
@@ -298,7 +349,7 @@ footer{
     background-color: #fff;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Sour Gummy", sans-serif;
 }
 
 .sponsors-caja {
@@ -321,7 +372,17 @@ footer{
 }
 
 
-
+/* ---------------------------------------------------------------------------------*/ 
+/* --------------------------------RESPONSIVE---------------------------------------*/ 
+/* ---------------------------------------------------------------------------------*/ 
+@media (max-width: 1000px) {
+    .contenedor {
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+        } 
+        
+    }
 
 
 /* ---------------------------------------------------------------------------------*/
