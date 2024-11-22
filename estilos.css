@@ -147,6 +147,91 @@ footer{
     font-family: "Sour Gummy", sans-serif;
 }
 
+/* ---------------------------------------------------------------------------------*/ 
+/* --------------------------------RESPONSIVE---------------------------------------*/ 
+/* ---------------------------------------------------------------------------------*/ 
+/* Responsivo para pantallas de hasta 1000px */
+@media (max-width: 1000px) {
+    .contenedor {
+        width: 80%;
+        margin: 0;
+        padding: 0; 
+    }
+}
+@media (min-width: 769px) {
+    body {
+        font-size: 18px;
+    }
+
+    .contenedor {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .lista-productos .producto {
+        width: 22%;
+    }
+
+    .ventaja {
+        width: 150px;
+    }
+
+    .sponsors-caja {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+    .barra-busqueda {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .navegacion ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu > li > a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .lista-productos .producto {
+        width: 45%; 
+        margin: 2%;
+    }
+
+    .Configura-tu-pc img {
+        max-height: 250px;
+    }
+
+    .ventaja {
+        width: 40%;
+    }
+
+    #contactanos input, #contactanos textarea, #contactanos button {
+        width: 85%;
+    }
+
+    .sponsors-caja {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .sponsor {
+        flex: 1 1 100px;
+    }
+}
+
 
 
 /* ---------------------------------------------------------------------------------*/
@@ -368,121 +453,6 @@ footer{
 }
 
 
-/* ---------------------------------------------------------------------------------*/ 
-/* --------------------------------RESPONSIVE---------------------------------------*/ 
-/* ---------------------------------------------------------------------------------*/ 
-/* Responsivo para pantallas de hasta 1000px */
-@media (max-width: 1000px) {
-    .contenedor {
-        width: 100%;
-        margin: 0;
-        padding: 0; 
-    }
-}
-
-/* Responsivo para pantallas de hasta 768px */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    .menu > li > a {
-        font-size: 14px;
-    }
-
-    .ventajas-caja {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 10px;
-    }
-
-    .ventaja {
-        width: 100%;
-    }
-
-    .barra-busqueda {
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    .iconos {
-        margin-top: 10px;
-        flex-direction: row;
-        gap: 10px;
-    }
-}
-
-/* Responsivo para pantallas de hasta 480px */
-@media (max-width: 480px) {
-    header {
-        padding: 5px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .barra-busqueda {
-        font-size: 14px;
-        padding: 5px;
-        width: 90%;
-    }
-    
-    .navegacion ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .contenedor-tienda {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-    }
-
-    .lista-productos .producto {
-        width: 90%;
-        margin: 5% auto;
-    }
-    
-    .ventajas-caja {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .ventaja img {
-        width: 40px;
-        height: 40px;
-    }
-
-    footer {
-        font-size: 12px;
-    }
-}
-
-/* Responsivo para pantallas de hasta 320px */
-@media (max-width: 320px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .barra-busqueda {
-        font-size: 12px;
-        width: 100%;
-    }
-
-    .producto {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin: 5% auto;
-    }
-
-    .ventaja {
-        width: 100%;
-        margin: 0 auto;
-    }
-}
 
 
 /* ---------------------------------------------------------------------------------*/
