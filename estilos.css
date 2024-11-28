@@ -147,91 +147,6 @@ footer{
     font-family: "Sour Gummy", sans-serif;
 }
 
-/* ---------------------------------------------------------------------------------*/ 
-/* --------------------------------RESPONSIVE---------------------------------------*/ 
-/* ---------------------------------------------------------------------------------*/ 
-/* Responsivo para pantallas de hasta 1000px */
-@media (max-width: 1000px) {
-    .contenedor {
-        width: 80%;
-        margin: 0;
-        padding: 0; 
-    }
-}
-@media (min-width: 769px) {
-    body {
-        font-size: 18px;
-    }
-
-    .contenedor {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .lista-productos .producto {
-        width: 22%;
-    }
-
-    .ventaja {
-        width: 150px;
-    }
-
-    .sponsors-caja {
-        flex-direction: row;
-    }
-}
-
-@media (min-width: 376px) and (max-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
-    header {
-        padding: 10px 20px;
-    }
-
-    .barra-busqueda {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .navegacion ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .menu > li > a {
-        font-size: 16px;
-        padding: 8px;
-    }
-
-    .lista-productos .producto {
-        width: 45%; 
-        margin: 2%;
-    }
-
-    .Configura-tu-pc img {
-        max-height: 250px;
-    }
-
-    .ventaja {
-        width: 40%;
-    }
-
-    #contactanos input, #contactanos textarea, #contactanos button {
-        width: 85%;
-    }
-
-    .sponsors-caja {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-
-    .sponsor {
-        flex: 1 1 100px;
-    }
-}
-
 
 
 /* ---------------------------------------------------------------------------------*/
@@ -276,7 +191,7 @@ footer{
 
 /* ---------------------------------------------------------------------------------*/
 .contenedor {
-    width: 60%;
+    width: 90%;
     margin: auto;
     margin-top: 120px;
     
@@ -308,7 +223,7 @@ footer{
 }
 
 .lista-productos {
-    width: 97%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -366,6 +281,7 @@ footer{
     align-items: center; 
 }
 .Configura-tu-pc img {
+    width: 60vw;
     max-height: 300px;
     border-radius: 2%;
     margin-bottom: 30px;
@@ -412,7 +328,7 @@ footer{
 }
 
 .ventaja p {
-    font-size: 16px;
+    font-size: 19px;
     color: #555;
     font-family: "Sour Gummy", sans-serif;
     margin: 0;
@@ -491,3 +407,115 @@ input, textarea{
     font-size: 16px;
     margin-bottom: 2%;
 }
+
+
+
+/* ---------------------------------------------------------------------------------*/ 
+/* --------------------------------RESPONSIVE---------------------------------------*/ 
+/* ---------------------------------------------------------------------------------*/ 
+/* Responsivo para pantallas de hasta 1000px */
+@media (max-width: 1000px) {
+    .contenedor {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0; 
+    }
+    .ventajas-caja {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-evenly;
+    }
+   
+}
+@media (min-width: 769px) {
+    body {
+        font-size: 18px;
+    }
+
+    .contenedor {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .lista-productos .producto {
+        width: 21%;
+    }
+   
+
+    .ventaja {
+        width: 40%; 
+        margin: 5px auto;
+    }
+
+    .sponsors-caja {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 768px) {
+    
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+    .barra-busqueda {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .navegacion ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu > li > a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .lista-productos .producto {
+        width: 45%; 
+        margin: 3% auto;
+    }
+    .contenedor {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .Configura-tu-pc img {
+        width: 90vw;
+        max-height: 300px;
+        border-radius: 2%;
+        margin-bottom: 30px;
+    }
+
+    .ventaja {
+        width: 40%; 
+        margin: 10px auto;
+    }
+    .ventajas-caja {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-evenly;
+    }
+
+    #contactanos input, #contactanos textarea, #contactanos button {
+        width: 85%;
+    }
+
+    .sponsors-caja {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .sponsor {
+        flex: 1 1 100px;
+    }
+}
+
