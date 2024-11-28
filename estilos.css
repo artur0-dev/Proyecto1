@@ -461,7 +461,7 @@ input, textarea{
     }
 }
 
-@media (min-width: 376px) and (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
     
     body {
         font-size: 16px;
@@ -482,10 +482,39 @@ input, textarea{
     }
 
     .menu > li > a {
-        font-size: 16px;
-        padding: 8px;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 5px;
     }
-
+    .submenu {
+        position: absolute;
+        background: white;
+        color: black;
+        width: 90px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s;
+        z-index: 1;
+        left: -8px;
+        top: 90%;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    
+    .submenu li {
+        width: 100%; 
+        text-align: center; 
+    }
+    .submenu li a {
+        display: block;
+        padding: 12px;
+        color: #000000;
+        font-family: "Sour Gummy", sans-serif;
+        text-decoration: none;
+        width: 100%;
+    }
+    
     .lista-productos .producto {
         width: 45%; 
         margin: 3% auto;
