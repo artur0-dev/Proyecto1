@@ -303,9 +303,9 @@ footer{
 
 .ventajas-caja {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 20px; 
-    justify-content: center; 
+    justify-content: center;
 }
 
 .ventaja {
@@ -413,7 +413,6 @@ input, textarea{
 /* ---------------------------------------------------------------------------------*/ 
 /* --------------------------------RESPONSIVE---------------------------------------*/ 
 /* ---------------------------------------------------------------------------------*/ 
-/* Responsivo para pantallas de hasta 1000px */
 @media (max-width: 1000px) {
     .contenedor {
         width: 95%;
@@ -438,8 +437,17 @@ input, textarea{
         margin: 0 auto;
     }
 
+    .contenedor-tienda {
+        width: 100%;
+    }
+    .lista-productos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px; 
+    }
+
     .lista-productos .producto {
-        width: 21%;
+        width: 20%;
     }
    
 
