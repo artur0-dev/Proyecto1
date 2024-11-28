@@ -358,11 +358,12 @@ footer{
 
 .sponsor {
     flex: 0 0 25%;
+    margin: auto;
 }
 
 .sponsor img {
     width: 60%;
-    height: auto;
+    margin: auto;
     display: block;
 }
 
